@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+body {
+    font-family: 'Bebas Neue', sans-serif;
+    color: #ffffff;
+    background-color: #201d28;
+    line-height: 1.6;
+}
+header {
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 33px 9%;
+    background: rgba(32, 29, 40, 0.8); /* Fundo semi-transparente */
+}
+.logo {
+    font-weight: 700;
+    font-size: 50px;
+    color: #ffffff; /* Cor branca para o logo */
+}
+.navlist {
+    display: flex;
+}
+.navlist a {
+    color: #ffffff; /* Cor branca para os links */
+    margin-left: 60px;
+    font-size: 20px;
+    font-weight: 600;
+    border-bottom: 2px solid transparent;
+    transition: all .55s ease;
+}
+.navlist a:hover {
+    border-bottom: 2px solid #ff4d4d; /* Cor de destaque */
+}
+#menu-icon {
+    color: #ffffff; /* Cor branca para o ícone do menu */
+    font-size: 35px;
+    z-index: 10001;
+    cursor: pointer;
+    display: none;
+}
+.hero {
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(235.59deg, #8b0000 0%, #201d28 28.53%, #2e2a47 75.52%);
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+}
+section {
+    padding: 0 10%;
+    margin-bottom: 40px;
+}
+.hero-text h5 {
+    font-size: 14px;
+    font-weight: 400;
+    color: #ffffff; /* Cor branca para o subtítulo */
+    margin-bottom: 40px;
+}
+.hero-text h1 {
+    font-size: 90px;
+    line-height: 1;
+    color: #e74c3c; /* Cor de destaque para o título */
+    font-family: 'Bebas Neue', sans-serif; /* Fonte chamativa para o título */
+    margin-bottom: 40px;
+}
+.hero-text h1 span {
+    color: #ff4d4d; /* Cor de destaque para o texto "Genshin Impact" */
+}
+.hero-text h4 {
+    font-size: 24px; /* Aumentar o tamanho do subtítulo */
+    font-weight: 600;
+    color: #ff4d4d; /* Cor vermelha para o subtítulo */
+    margin-bottom: 10px;
+}
+.hero-text p {
+    color: #d3d3d3; /* Cor clara que contrasta bem com o fundo */
+    font-size: 15px;
+    line-height: 1.9;
+    margin-bottom: 40px;
+}
+.hero-img img {
+    width: 100%;
+    height: auto;
+    max-width: 600px;
+    border-radius: 10%;
+    margin: 0 auto;
+}
+.hero-text a {
+    display: inline-block;
+    color: #ffffff;
+    background: #7f8c8d; /* Cor de fundo do botão */
+    border: 1px solid #ff4d4d; /* Borda vermelha */
+    padding: 12px 30px;
+    line-height: 1.4;
+    font-weight: 500;
+    border-radius: 30px;
+    text-transform: uppercase;
+    transition: all .55s ease;
+}
+.hero-text a:hover {
+    background: #95a5a6; /* Cor de fundo do botão ao passar o mouse */
+    border: 1px solid #ff4d4d; /* Borda vermelha */
+    color: #ffffff; /* Cor do texto do botão ao passar o mouse */
+    transform: translateX(8px);
+}
+.hero-text a.ctaa {
+    background: transparent;
+    border: 1px solid #ff4d4d; /* Borda vermelha */
+    color: #ff4d4d; /* Cor de destaque para o botão secundário */
+    margin-left: 20px;
+}
+.hero-text a.ctaa i {
+    vertical-align: middle;
+    margin-right: 5px;
+}
+.icons {
+    position: absolute;
+    top: 50%;
+    padding: 0 9%;
+    transform: translateY(-50%);
+}
+.icons i {
+    display: block;
+    margin: 26px 0;
+    font-size: 24px;
+    color: #ffffff; /* Cor branca para os ícones */
+    transition: all .55s ease;
+}
+.icons i:hover {
+    color: #ff4d4d; /* Cor de destaque ao passar o mouse */
+    transform: translateY(-5px);
+}
+.scroll-down {
+    position: absolute;
+    bottom: 6%;
+    right: 9%;
+}
+.scroll-down i {
+    display: block;
+    padding: 12px;
+    font-size: 25px;
+    color: #ffffff; /* Cor branca para o ícone de rolagem */
+    border-radius: 30px;
+    transition: all .55s ease;
+}
+.scroll-down i:hover {
+    color: #ff4d4d; /* Cor de destaque ao passar o mouse */
+    transform: translateY(-5px);
+}
+@media (max-width:1535px) {
+    header {
+        padding: 15px 3%;
+        transition: .2s;
+    }
+    .icons {
+        padding: 0 3%;
+        transition: .2s;
+    }
+    .scroll-down {
+        right: 3%;
+        transition: .2s;
+    }
+}
+@media (max-width: 1460px) {
+    section {
+        padding: 0 12%;
+        transition: .2s;
+    }
+}
+@media (max-width: 1340px) {
+    .hero-img img {
+        width: 100%;
+        height: auto;
+    }
+    .hero-text h1 {
+        font-size: 75px;
+        margin: 0 0 30px;
+    }
+    .hero-text h5 {
+        margin-bottom: 25px;
+    }
+}
+@media (max-width:1195px) {
+    section {
+        padding: 0 3%;
+        transition: .2s;
+    }
+    .hero-text {
+        padding-top: 115px;
+    }
+    .hero-img {
+        text-align: center;
+    }
+    .hero-img img {
+        width: 80%;
+        height: auto;
+    }
+    .hero {
+        height: 100%;
+        gap: 1rem;
+        grid-template-columns: 1fr;
+    }
+    .icons {
+        display: none;
+    }
+    .scroll-down {
+        display: none;
+    }
+}
+@media (max-width:990px) {
+    #menu-icon {
+        display: block;
+    }
+    .navlist {
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 200px;
+        height: 30vh;
+        background: #778899;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 40px 20px;
+        transition: all .55s ease;
+    }
+    .navlist a {
+        margin-left: 0;
+        display: block;
+        margin: 7px 0;
+    }
+    .navlist.open {
+        right: 0;
+    }
+}
+@media (max-width:680px) {
+    .hero-img img {
+        width: 100%;
+        height: auto;
+    }
+}
